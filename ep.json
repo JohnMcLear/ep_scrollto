@@ -1,0 +1,10 @@
+{
+  "parts": [
+    {
+      "name": "scrollto",
+      "client_hooks": {
+        "postAceInit": "ep_scrollto/static/js/postAceInit:postAceInit"
+      }
+    }
+  ]
+}
