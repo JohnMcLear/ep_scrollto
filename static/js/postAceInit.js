@@ -4,10 +4,12 @@ exports.postAceInit = function(hook, context){
     var count = 1;
     $('iframe[name="ace_outer"]').contents().find('iframe').contents().find("#innerdocbody").contents().each(function(){
       if(count == lineNumber){
-        var Y = $(this).context.offsetTop;
-console.log(Y);
-        outerWin.scrollTo(0,Y);
-        // console.log("scroll to", $(this).context.offsetTop);
+        var newY = $(this).context.offsetTop + "px";
+        var $outerdoc = $('iframe[name="ace_outer"]').contents().find("#outerdocbody");
+        var $outerdocHTML = $('iframe[name="ace_outer"]').contents().find("#outerdocbody").parent();
+        $outerdoc.scrollTop(newY); // works in Chrome not FF
+        $outerdoc.animate({scrollTop: newY});
+        $outerdocHTML.animate({scrollTop: newY}); // needed for FF
         return false;
       }
       count++;
