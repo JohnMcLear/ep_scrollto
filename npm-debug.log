@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.2.2
+3 info using node@v0.8.18
+4 verbose publish [ '.' ]
+5 verbose read json /home/jose/etherpad-lite/node_modules/ep_scrollto/package.json
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { pathname: '.', path: '.', href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/jose/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/tmp.tgz
+14 verbose folder .
+15 info prepublish ep_irc@0.0.1
+16 silly lockFile 8c82f164-12988-0-8488704890478402-tmp-tgz /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/tmp.tgz
+17 verbose lock /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/tmp.tgz /home/jose/.npm/8c82f164-12988-0-8488704890478402-tmp-tgz.lock
+18 silly lockFile 8c82f164-12988-0-8488704890478402-tmp-tgz /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/tmp.tgz
+19 verbose tar unpack /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/tmp.tgz
+20 silly lockFile 789a981b-12988-0-8488704890478402-package /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/package
+21 verbose lock /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/package /home/jose/.npm/789a981b-12988-0-8488704890478402-package.lock
+22 silly gunzTarPerm modes [ '755', '644' ]
+23 silly gunzTarPerm extractEntry package.json
+24 silly gunzTarPerm extractEntry README.md
+25 silly gunzTarPerm extractEntry .ep_initialized
+26 silly gunzTarPerm extractEntry static/js/postAceInit.js
+27 silly gunzTarPerm extractEntry ep.json
+28 verbose read json /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/package/package.json
+29 silly lockFile 789a981b-12988-0-8488704890478402-package /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/package
+30 verbose from cache /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/package/package.json
+31 verbose tar pack [ '/home/jose/.npm/ep_irc/0.0.1/package.tgz',
+31 verbose tar pack   '/home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/package' ]
+32 verbose tarball /home/jose/.npm/ep_irc/0.0.1/package.tgz
+33 verbose folder /home/jose/tmp/npm-24216/1364098412988-0.8488704890478402/package
+34 silly lockFile 684ec2ca-ose-npm-ep-irc-0-0-1-package-tgz /home/jose/.npm/ep_irc/0.0.1/package.tgz
+35 verbose lock /home/jose/.npm/ep_irc/0.0.1/package.tgz /home/jose/.npm/684ec2ca-ose-npm-ep-irc-0-0-1-package-tgz.lock
+36 silly lockFile 684ec2ca-ose-npm-ep-irc-0-0-1-package-tgz /home/jose/.npm/ep_irc/0.0.1/package.tgz
+37 silly lockFile 6d2c032d-me-jose-npm-ep-irc-0-0-1-package /home/jose/.npm/ep_irc/0.0.1/package
+38 verbose lock /home/jose/.npm/ep_irc/0.0.1/package /home/jose/.npm/6d2c032d-me-jose-npm-ep-irc-0-0-1-package.lock
+39 silly lockFile 6d2c032d-me-jose-npm-ep-irc-0-0-1-package /home/jose/.npm/ep_irc/0.0.1/package
+40 verbose tar unpack /home/jose/.npm/ep_irc/0.0.1/package.tgz
+41 silly lockFile 6d2c032d-me-jose-npm-ep-irc-0-0-1-package /home/jose/.npm/ep_irc/0.0.1/package
+42 verbose lock /home/jose/.npm/ep_irc/0.0.1/package /home/jose/.npm/6d2c032d-me-jose-npm-ep-irc-0-0-1-package.lock
+43 silly gunzTarPerm modes [ '755', '644' ]
+44 silly gunzTarPerm extractEntry package.json
+45 silly gunzTarPerm extractEntry README.md
+46 silly gunzTarPerm extractEntry .ep_initialized
+47 silly gunzTarPerm extractEntry static/js/postAceInit.js
+48 silly gunzTarPerm extractEntry ep.json
+49 verbose read json /home/jose/.npm/ep_irc/0.0.1/package/package.json
+50 silly lockFile 6d2c032d-me-jose-npm-ep-irc-0-0-1-package /home/jose/.npm/ep_irc/0.0.1/package
+51 silly shasum updated bytes 1474
+52 info shasum 87c00535afa998019401e164139bbfd8133f292e
+52 info shasum /home/jose/.npm/ep_irc/0.0.1/package.tgz
+53 verbose from cache /home/jose/.npm/ep_irc/0.0.1/package/package.json
+54 verbose chmod /home/jose/.npm/ep_irc/0.0.1/package.tgz 644
+55 verbose chown /home/jose/.npm/ep_irc/0.0.1/package.tgz [ 1000, 1000 ]
+56 silly lockFile 3a52ce78- .
+57 silly publish { name: 'ep_irc',
+57 silly publish   version: '0.0.1',
+57 silly publish   keywords: [ 'video', 'etherpad', 'chat', 'irc' ],
+57 silly publish   description: 'Adds an embedded Freenode Web chat client and autojoins to #Etherpad and #Etherpad-Lite-Dev channels',
+57 silly publish   contributors:
+57 silly publish    [ { name: 'John McLear',
+57 silly publish        email: 'john@mclear.co.uk',
+57 silly publish        url: 'http://mclear.co.uk' } ],
+57 silly publish   repository: { type: 'git', url: 'git://github.com/johnmclear/ep_irc.git' },
+57 silly publish   dependencies: {},
+57 silly publish   engines: { node: '*' },
+57 silly publish   readme: '# ep_irc\n\nIRC client inside your Etherpad page, just for fun.\n\n## How to use\n\n* Really?\n\n## Set as disabled by default (not available yet)\n\n1. Open `settings.json`\n2. Append:\n   `"ep_irc" : {\n      "disabled_by_default" : true\n    }\n   `\n\n## Change the default IRC channels (not available yet)\n\n## Please add more functionality\n\nI\'m available as a gun for hire.\n',
+57 silly publish   readmeFilename: 'README.md',
+57 silly publish   _id: 'ep_irc@0.0.1',
+57 silly publish   _from: '.',
+57 silly publish   dist: { shasum: '87c00535afa998019401e164139bbfd8133f292e' } }
+58 verbose url raw ep_irc
+59 verbose url resolving [ 'https://registry.npmjs.org/', './ep_irc' ]
+60 verbose url resolved https://registry.npmjs.org/ep_irc
+61 info trying registry request attempt 1 at 04:13:33
+62 http PUT https://registry.npmjs.org/ep_irc
+63 http 409 https://registry.npmjs.org/ep_irc
+64 verbose url raw ep_irc
+65 verbose url resolving [ 'https://registry.npmjs.org/', './ep_irc' ]
+66 verbose url resolved https://registry.npmjs.org/ep_irc
+67 info trying registry request attempt 1 at 04:13:44
+68 http GET https://registry.npmjs.org/ep_irc
+69 http 200 https://registry.npmjs.org/ep_irc
+70 error publish fail Cannot publish over existing version.
+70 error publish fail Bump the 'version' field, set the --force flag, or
+70 error publish fail     npm unpublish 'ep_irc@0.0.1'
+70 error publish fail and try again
+71 error System Linux 3.5.0-17-generic
+72 error command "nodejs" "/usr/bin/npm" "publish"
+73 error cwd /home/jose/etherpad-lite/node_modules/ep_scrollto
+74 error node -v v0.8.18
+75 error npm -v 1.2.2
+76 error code EPUBLISHCONFLICT
+77 verbose exit [ 1, true ]

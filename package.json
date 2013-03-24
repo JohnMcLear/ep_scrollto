@@ -1,13 +1,11 @@
 {
-  "name": "ep_irc",
+  "name": "ep_scrollto",
   "version": "0.0.1",
   "keywords": [
-    "video",
-    "etherpad",
-    "chat",
-    "irc"
+    "scroll",
+    "scrollto"
   ],
-  "description": "Adds an embedded Freenode Web chat client and autojoins to #Etherpad and #Etherpad-Lite-Dev channels",
+  "description": "Scroll to a specific line number based on a parameter of lineNumber in the URL IE http://test.com/p/foo?lineNumber=10",
   "contributors": [
     {
       "name": "John McLear",
@@ -17,14 +15,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/johnmclear/ep_irc.git"
+    "url": "git://github.com/johnmclear/ep_scrollto.git"
   },
   "dependencies": {},
   "engines": {
     "node": "*"
   },
-  "readme": "# ep_irc\n\nIRC client inside your Etherpad page, just for fun.\n\n## How to use\n\n* Really?\n\n## Set as disabled by default (not available yet)\n\n1. Open `settings.json`\n2. Append:\n   `\"ep_irc\" : {\n      \"disabled_by_default\" : true\n    }\n   `\n\n## Change the default IRC channels (not available yet)\n\n## Please add more functionality\n\nI'm available as a gun for hire.\n",
+  "readme": "# ep_scrollto\n\nscrollto client inside your Etherpad page, just for fun.\n\n## How to use\n\n* Really?\n\n## Set as disabled by default (not available yet)\n\n1. Open `settings.json`\n2. Append:\n   `\"ep_scrollto\" : {\n      \"disabled_by_default\" : true\n    }\n   `\n\n## Change the default scrollto channels (not available yet)\n\n## Please add more functionality\n\nI'm available as a gun for hire.\n",
   "readmeFilename": "README.md",
-  "_id": "ep_irc@0.0.1",
-  "_from": "ep_irc@"
+  "_id": "ep_scrollto@0.0.1",
+  "_from": "ep_scrollto@"
 }
