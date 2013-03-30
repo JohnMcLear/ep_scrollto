@@ -1,19 +1,7 @@
 exports.postAceInit = function(hook, context){
   var lineNumber = getUrlVars()['lineNumber'];
   if(lineNumber){
-    var count = 1;
-    $('iframe[name="ace_outer"]').contents().find('iframe').contents().find("#innerdocbody").contents().each(function(){
-      if(count == lineNumber){
-        var newY = $(this).context.offsetTop + "px";
-        var $outerdoc = $('iframe[name="ace_outer"]').contents().find("#outerdocbody");
-        var $outerdocHTML = $('iframe[name="ace_outer"]').contents().find("#outerdocbody").parent();
-        $outerdoc.scrollTop(newY); // works in Chrome not FF
-        $outerdoc.animate({scrollTop: newY});
-        $outerdocHTML.animate({scrollTop: newY}); // needed for FF
-        return false;
-      }
-      count++;
-    });
+    scrollTo(lineNumber);
   }
 
   var $sidedivinner = $('iframe[name="ace_outer"]').contents().find("#sidedivinner");
@@ -23,9 +11,24 @@ exports.postAceInit = function(hook, context){
     var qs = $.param.querystring();
     $.bbq.pushState({"lineNumber":lineNumber});
   });
+  $sidedivinner.css("cursor", "pointer");
 
 };
 
+function scrollTo(lineNumber){
+  var count = 1;
+  $('iframe[name="ace_outer"]').contents().find('iframe').contents().find("#innerdocbody").contents().each(function(){
+    if(count == lineNumber){
+      var newY = $(this).context.offsetTop + "px";
+      var $outerdoc = $('iframe[name="ace_outer"]').contents().find("#outerdocbody");
+      var $outerdocHTML = $('iframe[name="ace_outer"]').contents().find("#outerdocbody").parent();
+      $outerdoc.animate({scrollTop: newY});
+      if($.browser.mozilla) $outerdocHTML.animate({scrollTop: newY}); // needed for FF
+      return false;
+    }
+    count++;
+  });
+}
 
 function getUrlVars(){
   var vars = [], hash;
