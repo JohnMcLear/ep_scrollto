@@ -4,7 +4,7 @@ Scroll to a line number on pad join
 
 ## How to use
 
-Add ?lineNumber=5 or whatever to the URL
+Click on a lineNumber or manually add #lineNumber=X(replace X with the line number) to the URL
 
 ## Please add more functionality
 
