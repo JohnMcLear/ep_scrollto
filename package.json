@@ -1,11 +1,11 @@
 {
   "name": "ep_scrollto",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "keywords": [
     "scroll",
     "scrollto"
   ],
-  "description": "Scroll to a specific line number based on a parameter of lineNumber in the URL IE http://test.com/p/foo?lineNumber=10",
+  "description": "Scroll to a specific line number based on a parameter of lineNumber in the URL IE http://test.com/p/foo#lineNumber=10 -- Users can click on the line number to get a link",
   "contributors": [
     {
       "name": "John McLear",
