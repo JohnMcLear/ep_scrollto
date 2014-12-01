@@ -23,7 +23,7 @@ function scrollTo(lineNumber){
       var $outerdoc = $('iframe[name="ace_outer"]').contents().find("#outerdocbody");
       var $outerdocHTML = $('iframe[name="ace_outer"]').contents().find("#outerdocbody").parent();
       $outerdoc.animate({scrollTop: newY});
-      if($.browser.mozilla) $outerdocHTML.animate({scrollTop: newY}); // needed for FF
+      if(browser.firefox) $outerdocHTML.animate({scrollTop: newY}); // needed for FF
       return false;
     }
     count++;
@@ -1065,7 +1065,6 @@ function getElementByIdInFrames(id, base) {
     
     // IE6/7 specifically need some special love when it comes to back-button
     // support, so let's do a little browser sniffing..
-    browser = $.browser,
     mode = document.documentMode,
     is_old_ie = browser.msie && ( mode === undefined || mode < 8 ),
     
