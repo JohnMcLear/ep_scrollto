@@ -22,8 +22,7 @@ function scrollTo(lineNumber){
       var newY = $(this).context.offsetTop + "px";
       var $outerdoc = $('iframe[name="ace_outer"]').contents().find("#outerdocbody");
       var $outerdocHTML = $('iframe[name="ace_outer"]').contents().find("#outerdocbody").parent();
-      $outerdoc.animate({scrollTop: newY});
-      if(browser.firefox) $outerdocHTML.animate({scrollTop: newY}); // needed for FF
+      $outerdocHTML.animate({scrollTop: newY});
       return false;
     }
     count++;
