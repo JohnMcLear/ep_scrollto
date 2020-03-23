@@ -16,14 +16,15 @@ exports.postAceInit = function(hook, context){
 };
 
 function scrollTo(lineNumber){
+  console.log("scroll to", lineNumber);
   var count = 1;
   $('iframe[name="ace_outer"]').contents().find('iframe').contents().find("#innerdocbody").contents().each(function(){
     if(count == lineNumber){
       var newY = $(this).context.offsetTop + "px";
       var $outerdoc = $('iframe[name="ace_outer"]').contents().find("#outerdocbody");
       var $outerdocHTML = $('iframe[name="ace_outer"]').contents().find("#outerdocbody").parent();
-      $outerdoc.animate({scrollTop: newY});
-      if(browser.firefox) $outerdocHTML.animate({scrollTop: newY}); // needed for FF
+      $outerdoc.css({top: newY +"px"}); // Chrome
+      $outerdocHTML.animate({scrollTop: newY}); // needed for FF
       return false;
     }
     count++;
