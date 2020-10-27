@@ -24,5 +24,9 @@
   "readme": "# ep_scrollto\n\nscrollto client inside your Etherpad page, just for fun.\n\n## How to use\n\n* Really?\n\n## Set as disabled by default (not available yet)\n\n1. Open `settings.json`\n2. Append:\n   `\"ep_scrollto\" : {\n      \"disabled_by_default\" : true\n    }\n   `\n\n## Change the default scrollto channels (not available yet)\n\n## Please add more functionality\n\nI'm available as a gun for hire.\n",
   "readmeFilename": "README.md",
   "_id": "ep_scrollto@0.0.1",
-  "_from": "ep_scrollto@"
+  "_from": "ep_scrollto@",
+  "funding": {
+    "type": "individual",
+    "url": "http://etherpad.org/"
+  }
 }
